@@ -1,0 +1,29 @@
+{
+  "name": "remote-dev-snippets",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Remote Dev Snippets",
+  "main": "./dist/main/index.js",
+	"engines": {
+		"node": ">=18.3.0"
+	},
+	"bin": {
+		"remote-dev-snippets": "./dist/main/index.js"
+	},
+	"scripts": {
+		"start": "tsc --watch",
+		"build": "tsc"
+	},
+  "author": "Andrey Evstigneev",
+  "license": "ISC",
+  "dependencies": {
+    "ws": "^8.8.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.3",
+    "@types/ws": "^8.5.3",
+    "devtools-protocol": "^0.0.1022601",
+    "typescript": "^4.7.4"
+  }
+}
